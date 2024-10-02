@@ -4,12 +4,12 @@ Este projeto é uma aplicação simples que permite criar e visualizar citaçõe
 
 ## O que é Arquitetura Limpa?
 
-A **Arquitetura Limpa** organiza o código em camadas separadas, cada uma com sua função bem definida. Isso facilita a manutenção do código, deixa o sistema mais fácil de entender e de adicionar novas funcionalidades. Aqui estão as camadas usadas neste projeto:
+A **Arquitetura Limpa** organiza o código em camadas separadas, cada uma com sua função muito bem definida. Isso facilita a manutenção do código, e também deixa o sistema mais fácil de entender e de adicionar novas funcionalidades. Aqui estão as camadas usadas neste projeto:
 
-1. **Domínio (Regras de Negócio):** Aqui ficam as regras e o que o sistema deve fazer, como criar ou buscar citações.
+1. **Domínio:** Aqui ficam as regras de negócio e o que o sistema deve fazer, como criar ou buscar citações.
 2. **Aplicação:** São os casos de uso, como quando o sistema recebe uma solicitação para adicionar ou mostrar uma citação.
 3. **Infraestrutura:** Lida com detalhes técnicos, como o banco de dados que armazena as citações (neste caso, um banco na memória).
-4. **Apresentação:** É a parte que os usuários ou sistemas externos interagem, como os endpoints da API.
+4. **Apresentação:** É a parte que os usuários ou sistemas externos interagem, aqui seria os endpoints da API.
 
 ### Benefícios
 
@@ -19,7 +19,7 @@ A **Arquitetura Limpa** organiza o código em camadas separadas, cada uma com su
 
 ## Funcionalidades
 
-O sistema tem as seguintes funções principais:
+O sistema possui as seguintes funções:
 
 1. **Listar todas as citações:**
 
