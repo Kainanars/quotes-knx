@@ -1,19 +1,18 @@
-import express, { json } from 'express';
+import express from 'express';
+import bodyParser from 'body-parser';
 import QuoteService from '../application/quoteService.js';
 import QuoteRepository from '../infrastructure/quoteRepository.js';
 
 const app = express();
-const port = 7000;
-app.use(json());
-
 const quoteRepository = new QuoteRepository();
 const quoteService = new QuoteService(quoteRepository);
 
+app.use(bodyParser.json());
+
 app.post('/quotes', (req, res) => {
-  const { text, author } = req.body;
   try {
-    const quote = quoteService.addQuote(text, author);
-    res.status(201).json(quote);
+    const newQuote = quoteService.addQuote(req.body.text, req.body.author);
+    res.status(201).json(newQuote);
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
@@ -21,21 +20,20 @@ app.post('/quotes', (req, res) => {
 
 app.get('/quotes/random', (req, res) => {
   try {
-    const quote = quoteService.getRandomQuote();
-    res.status(200).json(quote);
+    const randomQuote = quoteService.getRandomQuote();
+    res.status(200).json(randomQuote);
   } catch (error) {
     res.status(404).json({ error: error.message });
   }
 });
+
 app.get('/quotes', (req, res) => {
   try {
-    const quotes = quoteService.getAllQuotes();
-    res.status(200).json(quotes);
+    const allQuotes = quoteService.getAllQuotes();
+    res.status(200).json(allQuotes);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
 });
 
-app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
-});
+export default app;

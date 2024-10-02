@@ -1,4 +1,4 @@
-import Quote from '../domain/quoteService.js';
+import Quote from '../domain/quote.js';
 
 export default class QuoteRepository {
   constructor() {

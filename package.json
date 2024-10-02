@@ -3,11 +3,18 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node src/presentation/app.js"
+    "start": "node src/presentation/app.js",
+    "test": "jest"
   },
   "dependencies": {
     "debug": "~2.6.9",
     "express": "~4.16.1"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0"
+  }
 }
