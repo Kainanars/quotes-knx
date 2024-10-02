@@ -47,7 +47,7 @@ O sistema tem as seguintes funções principais:
 1. **Clonar o repositório**:
 
    ```bash
-   git clone https://github.com/seu-usuario/quotes-knx.git
+   git clone https://github.com/Kainanars/quotes-knx.git
    cd quotes-knx
    ```
 
