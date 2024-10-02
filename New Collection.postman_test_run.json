@@ -1,0 +1,62 @@
+{
+	"id": "fe39d1d1-a548-439c-b637-a2f5dacc5820",
+	"name": "New Collection",
+	"timestamp": "2024-10-02T06:36:13.423Z",
+	"collection_id": "15534443-960c1f9d-e115-4de3-b30b-9ecf5945cae1",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-10-02T06:36:12.348Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "d148ade2-a81e-4b97-8b9e-038c9983958e",
+			"name": "Create Quote",
+			"url": "http://localhost:7000/quotes",
+			"time": 2,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				22,
+				3,
+				3,
+				2,
+				2,
+				2,
+				2,
+				2,
+				3,
+				2
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		}
+	],
+	"count": 10,
+	"totalTime": 43,
+	"collection": {
+		"requests": [
+			{
+				"id": "d148ade2-a81e-4b97-8b9e-038c9983958e",
+				"method": "POST"
+			}
+		]
+	}
+}

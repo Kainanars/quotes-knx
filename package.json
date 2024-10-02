@@ -1,0 +1,13 @@
+{
+  "name": "quotes-knx",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node src/presentation/app.js"
+  },
+  "dependencies": {
+    "debug": "~2.6.9",
+    "express": "~4.16.1"
+  },
+  "type": "module"
+}
